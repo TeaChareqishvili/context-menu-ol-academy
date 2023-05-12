@@ -1,21 +1,55 @@
 .menuWrapper{
     width:60%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border:solid 4px #CE8D9E;
+    padding:30px;
+    background-color:#F9DDE4;
    
+    h1{
+        text-align:center;
+        color:#A4133A;
+        margin-bottom:15px;
+    }
 
     li{
-        background-color:#FBDAE3;
-        padding:15px 20px;
+        background-color:white;
+        padding:10px 20px;
         color:#A092A0;
-        margin-top:10px;
+        border:solid 1px #A4133A;
+        border-radius:5px;
+        cursor:pointer;
       
     }
 
     p{
-        background-color:aquamarine;
+       
+        background-color:white;
         padding:10px 20px;
-        margin-top:10px;
-        margin-bottom:10px;
+        color:#A092A0;
+        border:solid 1px #A4133A;
+        border-radius:5px;
+        margin-top:5px;
+       
+    }
+
+    button{
+        background-color:#A4133A;
+        color:#F9DDE4;
+        border-radius:5px;
+        margin:15px;
+        padding:10px 20px;
+        width:100px;
+        border:none;
+        cursor:pointer;
     }
 }
 
+.menuPage{
+    background-color:#A4133A;
+    width:100vw;
+    height:100vh;
+}
 
