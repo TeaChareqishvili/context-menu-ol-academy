@@ -10,17 +10,18 @@ function UseContextMenu(menuPageRef, menuWrapperRef, setShowText) {
       if (menuPageRef.current && menuWrapperRef.current) {
         if (
           menuPageRef.current.contains(e.target) &&
-          !menuWrapperRef.current.contains(e.target)
+          !menuWrapperRef.current.contains(e.target) &&
+          (e.button === 0 || e.button === 2)
         ) {
           handleClose();
         }
       }
     };
 
-    document.addEventListener("click", handleClick);
+    document.addEventListener("mousedown", handleClick);
 
     return () => {
-      document.removeEventListener("click", handleClick);
+      document.removeEventListener("mousedown", handleClick);
     };
   }, [menuWrapperRef, menuPageRef]);
 
@@ -28,3 +29,4 @@ function UseContextMenu(menuPageRef, menuWrapperRef, setShowText) {
 }
 
 export { UseContextMenu };
+

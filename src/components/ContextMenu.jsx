@@ -1,7 +1,7 @@
 import { List } from "./List";
 import "./MenuStyle.scss";
 import { useRef, useState } from "react";
-import { UseContextMenu } from "./Hook/UseContextMenu";
+import { UseContextMenu } from "../Hook/UseContextMenu";
 
 function ContextMenu() {
   const menuPageRef = useRef(null);

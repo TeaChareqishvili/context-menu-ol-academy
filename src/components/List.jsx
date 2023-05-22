@@ -7,7 +7,7 @@ function List({ handleClose, showText, setShow }) {
     <ul>
       {listData.map((item, index) => (
         <div key={index}>
-          <li onClick={() => setShow(index)}>{item.title}</li>
+          <li style ={{backgroundColor:item.backgroundColor}} onClick={() => setShow(index)}>{item.title}</li>
           {showText === index && <p>{item.text}</p>}
 
           <button
